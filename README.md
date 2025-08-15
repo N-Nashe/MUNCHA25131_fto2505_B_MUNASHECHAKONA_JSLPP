@@ -4,41 +4,68 @@
 
 This project involves **deploying a Kanban app to Netlify**, ensuring the app's functionality and persistence through local storage, and implementing dynamic features such as task editing, deletion, sidebar interaction, and a theme toggle. The goal is to deliver a fully functional, deployable application that is responsive across devices and maintains data consistency. Students will also focus on **clean, modular code** that is well-documented for future development.
 
-## WHAT to Submit
 
-- **JSLPP GitHub Repo**: Your JSLPP GitHub repository
-- **Recorded Presentation:** A **5-10 minutes** presentation of your project demonstrating and talking through how you solved the user stories. No slides are neccessary and you will rather showcase your code and project features as you talk through your solutions.
-  - You can use any of these tools to record your presentation [Veed.io](https://www.veed.io/) [Windows recording](https://www.microsoft.com/en-us/windows/learning-center/how-to-record-screen-windows-11), [Zoom](https://www.zoom.com/), [Loom](https://www.loom.com/), [OBS](https://obsproject.com/), [Screencastify](https://www.screencastify.com/)
-  - Make sure your recorded presentation link is publicly accessible and is included in your GitHub README.
+A **Dynamic Kanban board** designed to showcase a **Kanban board** using **HTML**, **CSS**, **Javascript** and **Figma**.  
+The website is fully **responsive** on **desktop devices**, using appropriate **media queries** for a smooth user experience. as well as Javascript to make it interactive for the user to dynamically add tasks as well as save them to a local storage
 
-## HOW to Submit Your Project
+---
 
-- Push Final Version to GitHub: Ensure your final work is on GitHub.
-- Project Naming Convention: Make sure the name of your GitHub Repository is correct with the right naming convention. The naming convention is given in the GitHub Repo title. `StudentNo_Classcode_Group_Name-Surname_JSLPP`
-- Include Presentation Assets: Include your recorded presentation link in your GitHub README.
-- Deployment Link: Include a link to your deployed app in your GitHub README.
-- Provide LMS Link: Submit your Project GitHub link via the [Projects] tab > JSLPP PORTFOLIO PIECE > on the Learning Management System.
+## 🛠️ Installation Instructions
 
-## Before You Begin
+### Step 1️⃣: Install Visual Studio Code
 
-**Check out the [Figma Reference File](https://www.figma.com/design/y7bFCUYL5ZHfPeojACBXg2/Challenges-%7C-JSL?node-id=6033-11092&t=XbQhBWPYxXDAqp3x-1) and the project user stories in your student dashboard** before you start building.
+#### 🪟 Windows
 
-## Key Objectives
+1. Visit the official VS Code website:  
+   [https://code.visualstudio.com/](https://code.visualstudio.com/)
+2. Click **“Download for Windows”** (usually auto recognises your OS).
+3. Run the installer (`.exe` file) after downloading.
+4. During installation, consider checking these options:
+   - ✅ Add to PATH  
+   - ✅ Create a desktop icon  
+   - ✅ Open with Code
+5. Click **Next** through the steps, then click **Install**.
+6. Once installed, launch VS Code from the **Start Menu** or **desktop**.
 
-### Deployment & Hosting
+#### 🍎 macOS
 
-- **Prepare the Kanban app files** for deployment, ensuring the project structure aligns with best practices for deployment.
-- **Deploy the Kanban app to Netlify**, following the process of uploading your project and setting a custom deployment link.
-- Test the deployed app to ensure that all features, including task creation, editing, local storage, and sorting, work as expected in a live environment.
+1. Visit:  
+   [https://code.visualstudio.com/](https://code.visualstudio.com/)
+2. Click **“Download for macOS”**.
+3. Open the downloaded `.zip` file.
+4. Drag `Visual Studio Code.app` into your **Applications** folder.
 
-### Initial Data Fetching & Loading State
+---
 
-- **Fetch tasks dynamically** from an API: https://jsl-kanban-api.vercel.app/
+### Step 2️⃣: Install Extensions
 
-- **Replace any hard-coded task data**, to ensure the application receives the most up-to-date tasks.
+#### ✅ How to Install Extensions
 
-- **Display a loading message** while the tasks are being fetched so that users are informed the data is loading.
-- If fetching fails, **show an error message** to alert users to the issue.
+1. Open **VS Code**.
+2. Click the **Extensions** icon on the left sidebar  
+   (or press `Ctrl+Shift+X` / `Cmd+Shift+X` on Mac).
+3. Type the extension name into the search bar.
+4. Click **Install** on the correct extension.
+
+#### 🔌 Recommended Extension
+
+- **Live Server**  
+  - 🔍 *Search for:* `Live Server`  
+  - Ensure that once you press install that is it *enabled*  
+  - 🔥 *Feature:* Lets you right-click your `index.html` and click **"Open with Live Server"** — auto-reloads on save!
+
+---
+## 🚀 Usage
+
+### 🔧 How to Run the Project
+
+1. Open the project folder in VS Code:
+   - Launch VS Code.
+   - Go to **File > Open Folder...** and select your project directory.
+2. Locate `index.html`, **right-click**, and select **"Open with Live Server"**.
+3. There you will see pre-rendered tasks on the board as well as an add task button which can be clicked in order to add new tasks to the board
+
+---
 
 ### Data Persistence
 
@@ -47,8 +74,8 @@ This project involves **deploying a Kanban app to Netlify**, ensuring the app's 
 
 ### Task Editing & Deletion
 
-- Allow users to **edit task details** (title, description, status) in a modal. Upon saving, the task should reflect the updated data on the board and in local storage.
-- Implement a **delete button** within the modal to allow users to remove tasks. A confirmation message should appear before deleting a task, and if confirmed, the task will be removed from both the task board and local storage.
+- Allows users to **edit task details** (title, description, status) in a modal. Upon saving, the task should reflect the updated data on the board and in local storage.
+- Implemented a **delete button** within the modal to allow users to remove tasks. A confirmation message should appear before deleting a task, and if confirmed, the task will be removed from both the task board and local storage.
 
 ### Sidebar Interaction
 
@@ -62,35 +89,12 @@ This project involves **deploying a Kanban app to Netlify**, ensuring the app's 
 - Include the **theme toggle** switch in the mobile menu and ensure all features match the desktop sidebar, as shown in the Figma design.
 - Ensure that the mobile menu is **closable**, allowing users to dismiss it for an unobstructed view of the tasks.
 
-### Theme Toggle (Dark/Light Mode)
 
-- Include a **theme toggle switch** to allow users to switch between dark mode and light mode.
-- The toggle should be functional in both the **desktop sidebar** and the **mobile menu** for consistent theme switching across devices.
-- Ensure all elements of the **Kanban board** are styled appropriately in dark mode, ensuring good contrast and readability.
+## 🎥 Video Presentation
 
-### Stretch Goal: Adding Priority (Optional)
+Watch a short walkthrough of this project, where I explain the structure, features, and technologies used.
 
-Enhance your task management application by introducing a **priority system**. Users should be able to select a priority level—**High, Medium, or Low**—when creating or editing tasks. The priority should be:
+🔗 [Click here to view the presentation](https://www.veed.io/view/30dd0efa-711e-4ec2-a665-be4263ca83da?panel=share)
+<!-- Replace the # with your video link, e.g. https://youtu.be/your-video-id -->
 
-- **Visually displayed** on each task card as shown on the Figma design to clearly communicate urgency.
-- **Saved to local storage** to ensure persistence across page reloads.
-- **Editable** so users can adjust a task's importance as needed.
-- **Reflected immediately** on the UI upon changes.
-- **Sorted automatically** within each status column by priority (High → Medium → Low), with **High-priority tasks appearing at the top**.
-- **Persistently ordered**, maintaining correct priority display after refreshing the page.
-
-## Code Quality & Maintainability
-
-- **Break the code into separate modules** with clear responsibilities (e.g., local storage handling, task rendering, modal management) to improve maintainability and scalability.
-- Use **descriptive, meaningful variable and function names** to make the code easy to understand.
-- **Document every major function and module** using **JSDoc comments** to explain the purpose, parameters, and return values of each part of the code.
-
-## Expected Outcome
-
-A fully functional Kanban app that:
-
-- Dynamically fetches and displays tasks.
-- Supports task editing, deletion, and persistent storage through local storage.
-- Has a responsive, mobile-friendly sidebar with a theme toggle switch.
-- App deployed to **Netlify** with a custom, readable URL.
-- Uses modular, well-documented code that is easy to maintain and scale.
+---
