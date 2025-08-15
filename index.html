@@ -6,7 +6,6 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;1,400&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="./styles.css" />
     <link
       rel="icon"
@@ -17,19 +16,17 @@
     <script defer src="./scripts/main.js" type="module"></script>
     <title>Kanban Task Management</title>
   </head>
-
   <body>
     <!-- Navigation Sidebar: Contains the logo, navigation links for boards, and theme toggle. -->
     <nav class="side-bar" id="side-bar-div">
       <div id="side-logo-div">
         <img id="logo" src="./assets/logo-light.svg" alt="logo-light" />
       </div>
-
       <div class="boards-nav-links-div" id="boards-nav-links-div">
         <h4 id="headline-sidepanel">ALL BOARDS (1)</h4>
         <button class="board-btn">Launch Career</button>
       </div>
-      <!-- Add theme toggle button here -->
+      <!-- Theme toggle button at the bottom -->
       <div class="theme-switch-wrapper">
         <label class="theme-switch" for="theme-toggle">
           <input type="checkbox" id="theme-toggle" />
@@ -37,6 +34,8 @@
         </label>
         <span id="theme-switch-label">Dark Mode</span>
       </div>
+      <!-- Hide Sidebar Button under the dark mode toggle -->
+      <button class="board-btn" id="hide-sidebar-btn" style="margin-bottom: 2rem;">Hide Sidebar</button>
     </nav>
 
     <!-- Main Layout: Header with board title, add task button, and main content area for task columns. -->
@@ -56,7 +55,6 @@
           + Add New Task
         </button>
       </header>
-
       <div class="container">
         <main class="card-column-main">
           <!-- Task Columns: Display tasks grouped by status (TODO, DOING, DONE). -->
