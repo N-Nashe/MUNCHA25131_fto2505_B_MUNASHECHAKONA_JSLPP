@@ -27,7 +27,9 @@ export function setupNewTaskModalHandler() {
       form.reportValidity();
     }
   });
+
 }
+
 
 export function openTaskModal(task) {
   const modal = document.getElementById("task-modal");

@@ -571,6 +571,42 @@ textarea {
   border-radius: 0 100px 100px 0;
   height: 3em;
   width:4em;
-  
- 
+
 }
+
+/* Dark mode overrides */
+body.dark-mode {
+  --primary-color: #000000;
+  --secondary-color: #1a1a1a;
+  --primary-font-color: #ffffff;
+  --secondary-font-color: #cccccc;
+  --primary-btn-color: #635fc7; /* optional, can stay same */
+  background-color: var(--secondary-color);
+  color: var(--primary-font-color);
+}
+
+body.dark-mode .task-div {
+  background-color: #222;
+  color: #fff;
+}
+
+body.dark-mode header,
+body.dark-mode .side-bar {
+  background-color: #111;
+  color: #fff;
+}
+
+body.dark-mode .modal-window,
+body.dark-mode #task-modal {
+  background-color: #222;
+  color: #fff;
+}
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
