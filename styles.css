@@ -546,7 +546,7 @@ textarea {
   position: absolute;
   left: 0;
   bottom: 2rem;
-  width: 100%;
+  width: 60%;
 }
 
 /* Show Sidebar button at bottom left, same position as Hide */
@@ -559,6 +559,8 @@ textarea {
   background-color:#9b96f6;
   border:none;
   border-radius: 0 100px 100px 0;
+  height: 3em;
+  width:4em;
   
  
 }
