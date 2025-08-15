@@ -35,9 +35,6 @@ body {
 .side-bar {
   display: flex;
   flex-direction: column;
-  background-color: var(--primary-color);
-  border-right: 1px solid #e4ebfa; /* Light divider */
-  width: var(--sidebar-width);
   height: 100vh;
 }
 
@@ -477,4 +474,60 @@ textarea {
     padding-top: 0;
     padding-bottom: 0;
   }
+}
+
+/*toggle switch */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  margin-top: auto;
+  margin-bottom: 2rem; /* Optional: add some space from bottom */
+}
+
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 28px;
+}
+
+.theme-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: background 0.3s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.theme-switch input:checked + .slider {
+  background-color: #4f46e5;
+}
+
+.theme-switch input:checked + .slider:before {
+  transform: translateX(20px);
 }
