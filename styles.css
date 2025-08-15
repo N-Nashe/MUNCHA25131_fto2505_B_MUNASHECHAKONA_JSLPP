@@ -450,6 +450,16 @@ textarea {
 
 /******** Mobile ********/
 @media screen and (max-width: 576px) {
+
+   .side-bar {
+    display: none; /* Hide sidebar on tablets and smaller */
+  }
+
+  .side-bar.show-sidebar {
+    display: flex !important;
+    position: fixed; /* Overlay on top of page */
+    height: auto;
+  }
   .card-column-main {
     grid-template-columns: minmax(
       0,
