@@ -36,6 +36,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  position: relative;
 }
 
 #side-logo-div {
@@ -530,4 +531,30 @@ textarea {
 
 .theme-switch input:checked + .slider:before {
   transform: translateX(20px);
+}
+
+/* Sidebar layout */
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+}
+
+/* Hide Sidebar button at bottom */
+#hide-sidebar-btn {
+  position: absolute;
+  left: 0;
+  bottom: 2rem;
+  width: 100%;
+}
+
+/* Show Sidebar button at bottom left, same position as Hide */
+#show-sidebar-btn {
+  display: none;
+  position: fixed;
+  left: 0;
+  bottom: 2rem;
+  z-index: 1000;
+  width: 220px; /* Match sidebar width if needed */
 }

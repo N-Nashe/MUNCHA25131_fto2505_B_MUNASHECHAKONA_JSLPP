@@ -36,6 +36,21 @@ document.addEventListener("DOMContentLoaded", () => {
       label.textContent = "Dark Mode";
     }
   });
+
+  // Hide sidebar functionality
+  const hideSidebarBtn = document.getElementById("hide-sidebar-btn");
+  const sidebar = document.getElementById("side-bar-div");
+  const showSidebarBtn = document.getElementById("show-sidebar-btn");
+
+  hideSidebarBtn.addEventListener("click", () => {
+    sidebar.style.display = "none";
+    showSidebarBtn.style.display = "block";
+  });
+
+  showSidebarBtn.addEventListener("click", () => {
+    sidebar.style.display = "flex"; // or "block" if that's your default
+    showSidebarBtn.style.display = "none";
+  });
 });
 
 document.addEventListener("DOMContentLoaded", initTaskBoard);
