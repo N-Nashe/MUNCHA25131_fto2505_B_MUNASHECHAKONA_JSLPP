@@ -556,5 +556,9 @@ textarea {
   left: 0;
   bottom: 2rem;
   z-index: 1000;
-  width: 220px; /* Match sidebar width if needed */
+  background-color:#9b96f6;
+  border:none;
+  border-radius: 0 100px 100px 0;
+  
+ 
 }
